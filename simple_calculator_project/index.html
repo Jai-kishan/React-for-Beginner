@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+
+  <body>
+    <div class="container cal-md-6">
+      <div style="text-align: center">
+        <h1>Tip Calculator</h1>
+      </div>
+      <div class="column col-md-4">
+        <!-- <form action="" id="calculatorForm"> -->
+        <label for="bill_amount">How much was your bill ?</label><br />
+        &#8377;<input
+          type="number"
+          placeholder="Amount....."
+          value=""
+          name="bill_amount"
+          id="bill_amount"
+          required
+        />
+        <br /><br />
+
+        <label for="service">How was your service ?</label><br />
+        <select name="service" id="service" style="width: 200px" required>
+          <option value="1" selected>Select</option>
+          <option value="30">30&percnt; - Outstanding</option>
+          <option value="20">20&percnt; - Good</option>
+          <option value="15">15&percnt; - It was ok</option>
+          <option value="10">10&percnt; - Bad</option>
+          <option value="5">5&percnt; - Terrible</option>
+        </select>
+        <br /><br />
+
+        <label for="sharing_bill">How many people are sharing the bill?</label>
+        <br />
+        <input
+          type="number"
+          name="sharing_bill"
+          id="sharing_bill"
+          placeholder="Enter.."
+          required
+        /><br /><br />
+        <input type="submit" class="submit" value="Submit" /> <br /><br />
+        <!-- </form> -->
+        <!-- <p class="fa fa-inr"> -->
+        <p class="comission"></p>
+        <!-- </p> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

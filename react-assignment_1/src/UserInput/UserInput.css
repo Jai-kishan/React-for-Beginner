@@ -1,0 +1,8 @@
+.userin {
+  width: 30%;
+  padding: 16px;
+  margin: 16px auto;
+  box-shadow: 0 4px 12px lightgreen;
+  background-color: lightsteelblue;
+  border-radius: 10px;
+}
